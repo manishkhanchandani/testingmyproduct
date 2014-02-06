@@ -112,7 +112,7 @@ function addMarker(map,lat,long,titleText) {
 					<li><a href="<?php echo $site->path; ?>freelance">Freelance Work</a></li>
 					<li><a href="<?php echo $site->path; ?>personals">Personals</a></li>
 					<li><a href="<?php echo $site->path; ?>portfolios">Portfolio's</a></li>
-					<li><a href="<?php echo $site->path; ?>portfolios">Search</a></li>
+					<li><a href="<?php echo $site->path; ?>search">Search</a></li>
 				</ul>
 	</nav>
 <div class="wrapper <?php echo $pageStyle; ?>">
