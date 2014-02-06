@@ -1,0 +1,10 @@
+Options +FollowSymLinks
+RewriteEngine On
+
+#RewriteRule ^(.*)\.mk$ index.php?p=$1 [L,QSA]
+RewriteRule ^(.*)business\/detail\/(.*)\-([0-9]+)$ index.php?p=business/detail&id=$3 [L,QSA]
+
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_URI} !=/favicon.ico
+RewriteRule ^(.*)$ index.php?p=$1 [L,QSA]
