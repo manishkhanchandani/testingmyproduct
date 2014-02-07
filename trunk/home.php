@@ -86,6 +86,9 @@ function addMarker(map,lat,long,titleText) {
 <script type="text/javascript" src="https://www.google.com/jsapi?key=ABQIAAAALUsWUxJrv3zXUNCu0Kas1RQFv3AXA4OcITNh-zHKPaxsGpzj0xQrVCwfLY_kBbxK-4-gSU4j3c7huQ"></script>
 <script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false"></script>
 <script type="text/javascript" src="http://wc5.org/jm/js/jquery.ui.map.extensions.js"></script>
+
+<script type='text/javascript' src='/js/jquery.autocomplete.js'></script>
+<link href="/js/jquery.autocomplete.css" rel="stylesheet" type="text/css">
 <script type="text/xml">
 <!--
 <oa:widgets>
