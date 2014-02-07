@@ -2,7 +2,7 @@
 if (!isset($_SESSION)) {
 	session_start();
 }
-require_once('../Connections/conn.php');
+require_once('Connections/conn.php');
 define('_FUNC_TIME_ZERO', 0);
 define('_FUNC_TIME_FIVEMINUTE', 300);
 define('_FUNC_TIME_TENMINUTE', 600);
@@ -25,11 +25,11 @@ define('_protocol', 'http');
 define('_base_url', _protocol.'://'.HOST);
 define('_admin_email', 'admin@'._base_domain);
 define('FROM_EMAIL', 'From: System <system@'._base_domain.'>');
-define('_doc_url', '/mounted-storage/home135/sub004/sc29722-KLXJ/wc5.org'); 
+define('_doc_url', '/mounted-storage/home135/sub004/sc29722-KLXJ/wc5.org/city'); 
 define('_zend_cache', _doc_url.'/tmp/zendcache');
 define('_pear_cache', _doc_url.'/tmp/pearcache/');
-define('COOKIE_FILE_PATH', '/mounted-storage/home135/sub004/sc29722-KLXJ/wc5.org/city/tmp/cookiefilepath');
-define('CACHE_PATH', '/mounted-storage/home135/sub004/sc29722-KLXJ/wc5.org/city/tmp/cache');
+define('COOKIE_FILE_PATH', _doc_url.'/tmp/cookiefilepath');
+define('CACHE_PATH', _doc_url.'/tmp/cache');
 include_once('funcs.php');
 
 $host = str_replace('www.', '', $host);
@@ -39,7 +39,7 @@ $matches = regexp($tmpHost, $pattern, true);
 if (!empty($matches)) {
 	define('URL', strtolower($matches[0][0]));
 } else {
-	define('URL', strtolower($matches[0][0]));
+	define('URL', '');
 }
 /*
 $sites = array('city-sj.wc5.org' => 
