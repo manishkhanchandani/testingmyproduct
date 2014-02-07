@@ -166,7 +166,7 @@ function getlocation($state, $country='US') {
 }
 
 
-function get_nearby_cities($lat, $lon, $radius=30, $order='distance', $limit=15)
+function get_nearby_cities($lat, $lon, $radius=30, $order='distance', $limit=30)
 {
 	global $connAdodb;
 	$sql = sprintf("select city_id, url, city, state, country, lat, lon, (ROUND(

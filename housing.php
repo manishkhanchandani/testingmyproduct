@@ -1,7 +1,11 @@
 <?php
 include_once('Connections/connHousing.php');
 
-$nearby = get_nearby_cities($details['lat'], $details['lon'], 30);
+$radius = 30;
+if (!empty($_GET['r'])) $radius = $_GET['r'];
+$limit = 15;
+if (!empty($_GET['l'])) $limit = $_GET['l'];
+$nearby = get_nearby_cities($details['lat'], $details['lon'], $radius, 'distance', $limit);
 $site->nearby = $nearby;
 $nearbyCities = '';
 if (!empty($site->nearby)) { 
