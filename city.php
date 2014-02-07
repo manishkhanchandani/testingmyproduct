@@ -13,6 +13,7 @@ $site->nearby = $nearby;
 var latitude = '<?php echo $site->details['lat']; ?>';
 var longitude = '<?php echo $site->details['lon']; ?>';
 initializeGoogleMap('mapCanvas');
+//initializeGoogleStreetMap('mapCanvascitydetailstreetview', latitude, longitude);
 // EndOAWidget_Instance_2187524
 </script>
 			<!--<img src="images/me.jpg" alt="" /> --></span>
